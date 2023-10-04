@@ -1,0 +1,12 @@
+<body>
+    <h1>My Teachers</h1>
+    <ul>
+      <% teachers.forEach(function(t) { %>
+        <li>
+          <%= t.teacher %>
+            - 
+          <%= t.done ? 'favorite' : 'not favorite' %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
